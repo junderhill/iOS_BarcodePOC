@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface PTViewController : UIViewController
+< ZBarReaderDelegate >
+{
+    UIImageView *resultImage;
+    UITextView *resultText;
+}
 
+@property (nonatomic, retain) IBOutlet UIImageView *resultImage;
+@property (nonatomic, retain) IBOutlet UITextView *resultText;
+- (IBAction) scanButtonTapped;
 @end
